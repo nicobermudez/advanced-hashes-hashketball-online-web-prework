@@ -216,6 +216,30 @@ def player_stats(player_name)
   end
 end
 
+def big_shoe_rebounds
+  largest_shoe_size = 0 
+  largest_shoe_player = ""
+  player_name = ""
+  game_hash.each do |home_away, data|
+    data.each do |att, value|
+      if att == :players
+        value.each do |name, stats|
+            player_name = name
+            stats.each do |stat, val|
+              if stat == :shoe
+                if val > 0 
+                  largest_shoe_size = val 
+                  largest_shoe_player = player_name
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
+  
 
 
 
