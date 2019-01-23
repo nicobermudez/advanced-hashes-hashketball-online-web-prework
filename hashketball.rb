@@ -218,8 +218,8 @@ end
 
 def big_shoe_rebounds
   largest_shoe_size = 0 
-  largest_shoe_player = ""
   player_rebounds = 0
+  x = 0
   game_hash.each do |home_away, data|
     data.each do |att, value|
       if att == :players
@@ -229,7 +229,7 @@ def big_shoe_rebounds
               if stat == :shoe
                 if val > 0 
                   largest_shoe_size = val 
-                  largest_shoe_player = player_name
+                  x = 1
                 end
               end
             end
