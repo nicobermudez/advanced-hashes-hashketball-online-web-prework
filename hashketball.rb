@@ -177,6 +177,7 @@ def team_names(team_name)
       end
     end
   end
+  array
 end
 
 
