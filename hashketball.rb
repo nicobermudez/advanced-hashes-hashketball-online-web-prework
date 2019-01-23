@@ -208,7 +208,7 @@ def player_stats(player_name)
       if att == :players
         value.each do |name, stats|
           if name == player_name
-            stats
+            return stats
           end
         end
       end
