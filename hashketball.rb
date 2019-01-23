@@ -118,7 +118,10 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash.select 
+  game_hash.each do |home, data|
+    data.include?(playername) 
+      
+      stats.select
 end
 
 
