@@ -188,6 +188,8 @@ def player_numbers(team_name)
       if att == :team_name
         if value == team_name
           x = 1
+        else 
+          x = 0
         end
       elsif att == :players && x == 1
         value.each do |a, b|
