@@ -168,7 +168,7 @@ def team_colors(team_name)
   end
 end
 
-def team_names(team_name)
+def team_names
   array = []
   game_hash.each do |home_away, data|
     data.each do |att, value|
