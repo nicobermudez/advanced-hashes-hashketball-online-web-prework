@@ -193,7 +193,7 @@ def player_numbers(team_name)
         value.each do |a, b|
           b.each do |c, d|
             if c == :number
-              array << c
+              array << d
             end
           end
         end
