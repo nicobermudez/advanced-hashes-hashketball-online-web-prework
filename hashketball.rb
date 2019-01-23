@@ -160,6 +160,9 @@ def team_colors(team_name)
       if att == :team_name
         if value == team_name
           x = 1
+        end
+      elsif att == :colors && x == 1
+        return value
       end
     end
   end
