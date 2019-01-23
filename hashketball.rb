@@ -182,24 +182,19 @@ end
 
 def player_numbers(team_name)
   array = []
+  x = 0
   game_hash.each do |home_away, data|
     data.each do |att, value|
       if att == :team_name
         if value == team_name
-          value.each do |a, b|
-            if a == :players 
-              b.each do |c, d|
-                if c == :number
-                  array << d 
-                end
-              end
-            end
-          end
+          x = 1
         end
+      elsif att == :players && x == 1
+        att.each do 
       end
     end
   end
-  array
+end
 end
 
 
