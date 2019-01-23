@@ -203,7 +203,17 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  
+  game_hash.each do |home_away, data|
+    data.each do |att, value|
+      if att == :players
+        value.each do |name, stats|
+          if name == player_name
+            stats
+          end
+        end
+      end
+    end
+  end
 end
 
 
