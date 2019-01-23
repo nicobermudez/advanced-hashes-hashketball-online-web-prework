@@ -219,7 +219,7 @@ end
 def big_shoe_rebounds
   largest_shoe_size = 0 
   largest_shoe_player = ""
-  player_name = ""
+  player_rebounds = 0
   game_hash.each do |home_away, data|
     data.each do |att, value|
       if att == :players
@@ -237,7 +237,7 @@ def big_shoe_rebounds
       end
     end
   end
-  return largest_shoe_player
+  return largest_shoe_rebounds
 end
   
 
