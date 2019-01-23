@@ -156,8 +156,9 @@ end
 def team_colors(team_name)
   game_hash.each do |home_away, data|
     data.each do |att, value|
-      if team_name == :team_name
-        :colors.keys
+      if att == :team_name
+        if value == team_name
+          x = 
       end
     end
   end
