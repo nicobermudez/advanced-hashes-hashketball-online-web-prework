@@ -191,9 +191,6 @@ def player_numbers(team_name)
         end
       elsif att == :players && x == 1
         array << :players.keys
-            end
-          end
-        end
       end
     end
   end
