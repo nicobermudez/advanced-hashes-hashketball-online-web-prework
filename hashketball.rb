@@ -231,6 +231,8 @@ def big_shoe_rebounds
                   largest_shoe_size = val 
                   x = 1
                 end
+              elsif stat == :rebounds && x == 1 
+                player_rebounds = val
               end
             end
         end
