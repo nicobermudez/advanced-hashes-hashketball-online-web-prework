@@ -154,11 +154,12 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
+  x = 0
   game_hash.each do |home_away, data|
     data.each do |att, value|
       if att == :team_name
         if value == team_name
-          x = 
+          x = 1
       end
     end
   end
