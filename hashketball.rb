@@ -118,6 +118,7 @@ def game_hash
 end
 
 def num_points_scored(player_name)
+  
   game_hash.each do |home_away, data|
     data.each do |att, value|
       if att == :players
