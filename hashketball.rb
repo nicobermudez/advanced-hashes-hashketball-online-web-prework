@@ -190,10 +190,7 @@ def player_numbers(team_name)
           x = 1
         end
       elsif att == :players && x == 1
-        att.each do |a, b|
-          b.each do |c, d|
-            if c == :number
-              array << c
+        array << :players.keys
             end
           end
         end
